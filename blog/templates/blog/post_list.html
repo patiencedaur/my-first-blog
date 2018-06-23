@@ -1,19 +1,15 @@
-<html>
-    <head>
-        <title>Deathbunnies A-Go-Go по-русски</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Deathbunnies A-Go-Go - Дискотека &laquo;Кролики смерти&raquo;</a></h1>
-        </div>
+{% extends 'blog/base.html' %}
 
-        {% for post in posts %}
-          <div>
-            <p>published: {{post.published_date}}</p>
-            <h1><a href="">{{post.title}}</a></h1>
-            <p>{{post.text|linebreaksbr}}</p>
+{% block content %}
+    {% for post in posts %}
+          <div class="post">
+            <div class="date">
+              <p>published: {{post.published_date}}</p>
+            </div>
+            <h3>{{post.title}}</h3>
+            <p>{% with text_and_img=post.text|safe %}
+              {{text_and_img|linebreaksbr}}
+              {% endwith %}</p>
           </div>
-        {% endfor %}
-
-    </body>
-</html>
+    {% endfor %}
+{% endblock %}
