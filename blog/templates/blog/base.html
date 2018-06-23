@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<html>
+    <head>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <title>Deathbunnies A-Go-Go по-русски</title>
+    </head>
+    <body>
+        <div class="page-header">
+            <h1>Deathbunnies A-Go-Go - Дискотека &laquo;Кролики смерти&raquo;</h1>
+        </div>
+
+        {% block content %}
+        {% endblock %}
+
+    </body>
+</html>
