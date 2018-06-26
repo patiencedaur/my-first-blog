@@ -5,12 +5,19 @@
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
       <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
       <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+        <script type="text/javascript" src="static/mobilecheck.js">
+          if (window.mobilecheck() = true) {
+              document.location.replace("http://deathbunnies.pythonanywhere.com/");
+          }
+        </script>
+
         <title>Deathbunnies A-Go-Go по-русски</title>
+
     </head>
     <body>
         <div class="page-header">
           <img src="/static/img/dbheader.png" alt="Deathbunnies A-Go-Go: Дискотека Кролики Смерти">&nbsp;&nbsp;18+
-            <!--h1>Deathbunnies A-Go-Go по-русски: Дискотека &laquo;Кролики смерти&raquo;</h1-->
         </div>
 
         <div class="explainer">
