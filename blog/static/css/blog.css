@@ -1,9 +1,11 @@
-div {
+.explainer, .post {
   text-align: center;
 }
 
-.page-header h1 {
-  color: #AF5ACC;
+.page-header {
+  text-align: center;
+  color: #999999;
+  font-size: 40pt;
   font-family: Lobster, cursive;
 }
 
@@ -32,4 +34,12 @@ body {
 
 .post-form textarea, .post-form input {
     width: 100%;
+}
+
+.explainer {
+  margin-bottom: 70px;
+}
+
+.explainer a {
+  font-weight: bold;
 }
