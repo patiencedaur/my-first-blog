@@ -4,4 +4,5 @@ urlpatterns = [
 # view под названием post_list связывается с пустым адресом,
 # ему присваивается название post_list
     url(r'^$', views.post_list, name='post_list'),
+    url('mobile', views.mobile_page, name='mobile_page')
 ]

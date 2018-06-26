@@ -10,6 +10,7 @@ class Post(models.Model):
             default=timezone.now)
     published_date = models.DateTimeField(
             blank=True, null=True)
+#    comic = models.ImageField(upload_to="comics")
 
     def publish(self):
         self.published_date = timezone.now()
@@ -17,3 +18,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Mobile(models.Model):
+    text = models.TextField()
