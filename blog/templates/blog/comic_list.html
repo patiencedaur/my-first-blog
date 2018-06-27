@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for comic in comics %}
+          <div class="post">
+            <p><img src="/{{comic.pic.url}}"></p>
+          </div>
+    {% endfor %}
+{% endblock %}

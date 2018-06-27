@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from django.utils import timezone
-from .models import Post, Mobile
+from .models import Mobile, Comic
 
-def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/post_list.html', {'posts': posts})
+def comic_list(request):
+    comics = Comic.objects.order_by('created_at')
+    return render (request, 'blog/comic_list.html', {'comics': comics})
 
 def mobile_page(request):
     mpage = Mobile.objects.all()
