@@ -66,3 +66,10 @@ for i in a:
 	перебрать все
 for i in range(1, 5)
 	перебрать итераторы от 1 до 4
+
+
+Парсинг строки
+.split("разделитель", maxsplit=сколько раз разбить):
+"Changes_Come_Girl".split("_", maxsplit=1) - "Changes", "Come_Girl"
+
+разделить по набору _букв_, делить один раз
