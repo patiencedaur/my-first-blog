@@ -3,8 +3,8 @@ from django.utils import timezone
 from .models import Mobile, Comic
 
 def comic_list(request):
-    comics = Comic.objects.order_by('created_at')
-    return render (request, 'blog/comic_list.html', {'comics': comics})
+    comics = Comic.objects.order_by('pic')
+    return render(request, 'blog/comic_list.html', {'comics': comics})
 
 def mobile_page(request):
     mpage = Mobile.objects.all()
