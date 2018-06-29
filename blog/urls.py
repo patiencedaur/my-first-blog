@@ -4,8 +4,7 @@ from django.conf.urls.static import static
 from . import views
 
 urlpatterns = [
-# view под названием comic_list связывается с пустым адресом,
-# ему присваивается название post_list
+# when the view "comic_list" sees an empty url, it assigns it the name "comic_list"
     url(r'^$', views.comic_list, name='comic_list'),
     url('mobile', views.mobile_page, name='mobile_page')
 ]
