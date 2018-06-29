@@ -9,7 +9,7 @@ class Command(BaseCommand):
     def handle(self, **options):
 
         src = os.path.join(BASE_DIR, 'blog\comics') #initial folder
-        file_set = os.listdir(path=src) # find all comics in folder
+        file_set = os.listdir(src) # find all comics in folder
 
         print("Inserting comics...")
         for file_name in file_set: # for every comic in initial folder
