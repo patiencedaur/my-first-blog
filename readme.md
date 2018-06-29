@@ -4,7 +4,6 @@
 
 ### Создать 30 объектов Comic
 
-```import re
-
-addr = comic.pic.name
-comicid = int(re.split("[a-z+]", addr)[0])```
+```
+for #every file in blog/comics
+        Comic.objects.create(pic=file_address) ```
