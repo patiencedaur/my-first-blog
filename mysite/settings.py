@@ -119,7 +119,7 @@ USE_TZ = True
 
 # Media (images)
 
-MEDIA_URL = '/media/'
+MEDIA_URL = '/'
 MEDIA_ROOT = BASE_DIR
 
 # Static files (CSS, JavaScript, Images)
