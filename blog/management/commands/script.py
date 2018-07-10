@@ -17,4 +17,6 @@ class Command(BaseCommand):
             destination = os.path.join(BASE_DIR, 'media', 'comics', file_name) #full destination address
             print("Moving to " + destination)
             shutil.copy2(full_address, destination) # move files to /media/comics
-            Comic.objects.create(pic=destination) # create objects in database
+            relative_path = '/' + '/'.join(destination.split('/')[-3:])
+            Comic.objects.create(pic=relative_path) # create objects in database
+            print("site path " + relative_path)
