@@ -4,7 +4,7 @@ from mysite.settings import BASE_DIR
 from blog.models import Comic
 
 class Command(BaseCommand):
-    help = "Move Deathbunnies A-Go-Go to site directory. Use once"
+    help = "Move Deathbunnies A-Go-Go to site directory. Create database objects Use once"
 
     def handle(self, **options):
 
