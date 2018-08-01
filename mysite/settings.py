@@ -48,11 +48,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-#    'blog.middleware.detectmobilebrowser.DetectMobileBrowser'
 #    'mobile_redirect.middleware.MobileRedirectMiddleware',
 ]
 
-#MOBILE_REDIRECT_URL = 'http://deathbunnies.pythonanywhere.com/mobile'
+#MOBILE_REDIRECT_URL = 'https://github.com/ryanbagwell/django-mobile-redirect'
 
 ROOT_URLCONF = 'mysite.urls'
 
