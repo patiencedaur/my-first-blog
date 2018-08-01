@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.utils import timezone
 from .models import Mobile, Comic
+from .middleware.detectmobilebrowser import process_request
 
 def comic_list(request):
     comics = Comic.objects.order_by('pic')
@@ -8,5 +8,5 @@ def comic_list(request):
     return render(request, 'blog/comic_list.html', {'comics': comics})
 
 def mobile_page(request):
-    mpage = Mobile.objects.all()
-    return render(request, 'blog/mobile.html', {})
+    if process_request(request) == True:
+        return render(request, 'blog/mobile.html', {})
