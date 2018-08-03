@@ -43,3 +43,9 @@ body {
 .explainer a {
   font-weight: bold;
 }
+
+.footer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
